@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul || JS Developer</title>
+</head>
+<body style=" background-color: white; color: black;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    const addli = (name)=>{
+        const ele = document.createElement('li');
+        ele.innerText=`${name}`
+        document.querySelector('.language').appendChild(ele)
+    }
+    addli('Python')
+    addli('Java')
+
+    const addOpti = (name)=>{
+       const li= document.createElement('li');
+       li.appendChild(document.createTextNode(name));
+       document.querySelector('.language').appendChild(li);
+    }
+    addOpti('DoNet');
+</script>
+</html>
